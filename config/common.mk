@@ -55,6 +55,14 @@ PRODUCT_COPY_FILES += \
     vendor/extras/build/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/extras/build/tools/50-du.sh:system/addon.d/50-du.sh
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/du/prebuilt/etc/permissions/privapp-permissions-elgoog.xml:system/etc/permissions/privapp-permissions-elgoog.xml \
+    vendor/du/config/empty-permission.xml:system/etc/permissions/com.google.android.camera2.xml \
+	vendor/du/config/empty-permission.xml:system/etc/permissions/com.google.android.camera.experimental2015.xml \
+	vendor/du/config/empty-permission.xml:system/etc/permissions/com.google.android.camera.experimental2016.xml \
+	vendor/du/config/empty-permission.xml:system/etc/permissions/com.google.android.camera.experimental2017.xml
+
 # Packages
 include vendor/du/config/packages.mk
 
@@ -72,3 +80,4 @@ include vendor/gapps/config.mk
 
 # PixelStyle
 include vendor/pixelstyle/config.mk
+
