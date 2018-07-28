@@ -2,7 +2,7 @@
 DU_BASE_VERSION = v13.0
 
 ifndef DU_BUILD_TYPE
-    DU_BUILD_TYPE := UNOFFICIAL
+    DU_BUILD_TYPE := duRAN
 endif
 
 TARGET_PRODUCT_SHORT := $(subst du_,,$(DU_BUILD_TYPE))
