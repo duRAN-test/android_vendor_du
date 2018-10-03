@@ -66,3 +66,9 @@ include vendor/themes/common.mk
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
+
+# GApps
+include vendor/gapps/config.mk
+
+# PixelStyle
+include vendor/pixelstyle/config.mk
